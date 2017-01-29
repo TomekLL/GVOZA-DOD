@@ -10,4 +10,5 @@
 
 ##Par dolezitych info:
 - nepouzivajte shebangy, lebo vsetci robime na inom OS
+- pouzivajte komentare
 - nech tu z toho nemame [Big Ball of Mud](https://en.wikipedia.org/wiki/Big_ball_of_mud)
