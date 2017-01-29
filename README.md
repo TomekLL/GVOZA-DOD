@@ -12,3 +12,6 @@
 - nepouzivajte shebangy, lebo vsetci robime na inom OS
 - pouzivajte komentare
 - nech tu z toho nemame [Big Ball of Mud](https://en.wikipedia.org/wiki/Big_ball_of_mud)
+
+##Co s programom?
+v pythone spustite program `main.py` a ten vnutorne vyuziva vsetky ostatne subory. Kod je pisany tak, aby main len volal funkcie a robil delay atd atd... samotne funkcie su popisane v ostatnych suboroch :)
