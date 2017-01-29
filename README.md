@@ -1,7 +1,7 @@
 # GVOZA-DOD
 
 
-##bassic git commandy
+##bassic git commandy:
 - `git clone` na zacatie projektu
 - `git pull` na stiahnutie updatov
 - `git add .` na pridanie vsetkych novych suborov fo projektu
