@@ -3,5 +3,5 @@ import time
 
 while True:
 	disptime.print_time()
-	#4 sekundy caka
-	time.sleep(4) 
+	#2 sekundy caka
+	time.sleep(2) 
