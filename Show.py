@@ -1,10 +1,13 @@
 import RPi.GPIO as GPIO
 from time import sleep
-GPIO.setmode(GPIO.BOARD)
-displeje = (18,22,32,36,38,40)
-GPIO.setup(displeje,GPIO.OUT, initial=1)
-segments = (13,11,35,33,31,15,29,37)
-GPIO.setup(segments,GPIO.OUT, initial=1)
+
+def init():
+  GPIO.setmode(GPIO.BOARD)
+  displeje = (18,22,32,36,38,40)
+  GPIO.setup(displeje,GPIO.OUT, initial=1)
+  segments = (13,11,35,33,31,15,29,37)
+  GPIO.setup(segments,GPIO.OUT, initial=1)
+  
 num = {' ':(1,1,1,1,1,1,1,1),
        'F':(0,1,1,1,0,0,0,1),
        'A':(0,0,0,1,0,0,0,1),
@@ -13,7 +16,6 @@ num = {' ':(1,1,1,1,1,1,1,1),
        'd':(1,0,0,0,0,1,0,1),
        'E':(0,1,1,0,0,0,0,1),
        'H':(1,0,0,1,0,0,0,1),
-       'b':(),
        'n':(1,1,0,1,0,1,0,1),
        'o':(1,1,0,0,0,1,0,1),
        'P':(0,0,1,1,0,0,0,1),
@@ -32,7 +34,8 @@ num = {' ':(1,1,1,1,1,1,1,1),
        '7':(0,0,0,1,1,1,1,1),
        '8':(0,0,0,0,0,0,0,1),
        '9':(0,0,0,1,1,0,0,1)
-    }
+           }
+
 def seg():
     for displej in range(4):
         GPIO.output(segments, (num[display_string[displej]]))
