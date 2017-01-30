@@ -7,7 +7,7 @@ def init():
   GPIO.setup(displeje,GPIO.OUT, initial=1)
   segments = (13,11,35,33,31,15,29,37)
   GPIO.setup(segments,GPIO.OUT, initial=1)
-  
+
 num = {' ':(1,1,1,1,1,1,1,1),
        'F':(0,1,1,1,0,0,0,1),
        'A':(0,0,0,1,0,0,0,1),
@@ -36,6 +36,9 @@ num = {' ':(1,1,1,1,1,1,1,1),
        '9':(0,0,0,1,1,0,0,1)
            }
 
+#sprav tu funkciu tak, ze do nej mozes passovat argumenty
+#vnutri si overis ci je to string, ak hej, tak ho vypises
+#ak to bude integer, tak ho prevedies na string a vypises
 def seg():
     for displej in range(4):
         GPIO.output(segments, (num[display_string[displej]]))

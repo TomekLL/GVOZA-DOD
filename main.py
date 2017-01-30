@@ -4,6 +4,6 @@ import time
 init()
 
 while True:
+	# stale dookola vypisuje cas
 	disptime.print_time()
-	#2 sekundy caka
-	time.sleep(2) 
+	#time.sleep(2)
