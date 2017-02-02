@@ -2,6 +2,7 @@ import disptime
 import checkinput
 import hra
 import time
+import Led_strip
 
 init()
 
